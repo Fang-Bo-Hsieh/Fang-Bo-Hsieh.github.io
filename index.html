@@ -133,7 +133,7 @@
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>學經歷</h2>
+                    <h2>成長歷程</h2>
                 </div>
             </div>
             <div class="row">
@@ -232,7 +232,7 @@
                     <div class="chart" data-percent="70"><span><strong>Java</strong>70%</span></div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-                    <div class="chart" data-percent="60"><span><strong>Android</strong>60%</span></div>
+                    <div class="chart" data-percent="50"><span><strong>Android</strong>50%</span></div>
                 </div>
 
             </div>
@@ -248,7 +248,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 text-center col-padding animate-box">
+                <ul id="filters" class="clearfix">
+                    <li><span class="filter active" data-filter="full backend wechat android">All</span></li>
+                    <li><span class="filter" data-filter="full">Web</span></li>
+                    <li><span class="filter" data-filter="backend">Backend</span></li>
+                    <li><span class="filter" data-filter="wechat">微信公眾號</span></li>
+                    <li><span class="filter" data-filter="android">Android</span></li>
+                </ul>
+            </div>
+            <div id="portfolio-list" class="row">
+                <div class="col-md-3 text-center col-padding animate-box portfolio full" data-cat="full">
                     <a href="http://bbcomes.com" class="work" style="background-image: url(images/portfolio-1.jpg);">
                         <div class="desc">
                             <h3>寶貝來親子社群</h3>
@@ -256,31 +265,36 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
-                    <a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
+                <!--<div class="col-md-3 text-center col-padding animate-box portfolio full" data-cat="full">-->
+                    <!--<div class="portfolio-wrapper">-->
+                        <!--<img src="images/bbcomes_web.png" alt="" style="top: 0px;">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="col-md-3 text-center col-padding animate-box portfolio full" data-cat="full">
+                    <a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
                         <div class="desc">
                             <h3>北大腦健康醫療微信號</h3>
                             <span>Php(Phalcon) + Mysql</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
-                    <a href="#" class="work" style="background-image: url(images/portfolio-3.jpg);">
+                <div class="col-md-3 text-center col-padding animate-box portfolio full">
+                    <a href="#" class="work" style="background-image: url(images/portfolio-2.jpg);">
                         <div class="desc">
                             <h3>北大腦健康醫療商業管理系統</h3>
                             <span>Java(Spring) + Angular1 + Mysql</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
-                    <a href="#" class="work" style="background-image: url(images/portfolio-4.jpg);">
+                <div class="col-md-3 text-center col-padding animate-box portfolio wechat">
+                    <a href="#" class="work" style="background-image: url(images/portfolio-3.jpg);">
                         <div class="desc">
                             <h3>中國馬牌輪胎微信延保系統</h3>
                             <span>Php(Laravel) + Mysql</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio full">
                     <a href="#" class="work" style="background-image: url(images/portfolio-5.jpg);">
                         <div class="desc">
                             <h3>Coil</h3>
@@ -288,7 +302,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio full">
                     <a href="#" class="work" style="background-image: url(images/portfolio-6.jpg);">
                         <div class="desc">
                             <h3>富連網社區論壇</h3>
@@ -296,7 +310,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio backend">
                     <a href="#" class="work" style="background-image: url(images/portfolio-7.jpg);">
                         <div class="desc">
                             <h3>中國夏普電視廣告系統</h3>
@@ -304,7 +318,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio full">
                     <a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
                         <div class="desc">
                             <h3>富連網IOT會員系統</h3>
@@ -312,7 +326,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio android" data-cat="android">
                     <a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
                         <div class="desc">
                             <h3>丁丁藥局慢性處方箋App</h3>
@@ -320,7 +334,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio android">
                     <a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
                         <div class="desc">
                             <h3>Esta MES App</h3>
@@ -328,7 +342,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 text-center col-padding animate-box">
+                <div class="col-md-3 text-center col-padding animate-box portfolio android">
                     <a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">
                         <div class="desc">
                             <h3>Esta ERP App</h3>
@@ -346,7 +360,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p></p>
+                <p>Copyright 2015 The Develovers. All Rights Reserved.</p>
             </div>
         </div>
     </div>
@@ -368,9 +382,8 @@
 <script src="js/jquery.stellar.min.js"></script>
 <!-- Easy PieChart -->
 <script src="js/jquery.easypiechart.min.js"></script>
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-<script src="js/google_map.js"></script>
+<!-- MixItUp -->
+<script src="js/jquery.mixitup.min.js"></script>
 
 <!-- Main -->
 <script src="js/main.js"></script>

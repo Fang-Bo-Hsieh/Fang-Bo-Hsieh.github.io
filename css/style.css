@@ -1291,3 +1291,57 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#filters
+{
+  margin: 1%;
+  padding: 0;
+  list-style: none;
+}
+
+#filters li
+{
+  float: left;
+}
+
+#filters li span
+{
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+#filters li span.active
+{
+  background: #34495E;
+  color: #fff;
+}
+
+#portfolio-list .portfolio
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 23%;
+  margin: 1%;
+  display: none;
+  float: left;
+  overflow: hidden;
+}
+
+.portfolio-wrapper
+{
+  overflow: hidden;
+  position: relative !important;
+  background: #666;
+  height: 270px;
+}
+
+.portfolio img
+{
+  max-width: 100%;
+  position: relative;
+}

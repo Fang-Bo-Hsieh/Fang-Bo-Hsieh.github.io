@@ -134,8 +134,23 @@
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
-	
-	$(function(){
+	// Portfolio filter
+    var filterList = {
+        init: function () {
+            // MixItUp plugin
+            // http://mixitup.io
+            $('#portfolio-list').mixitup({
+                targetSelector: '.portfolio',
+                filterSelector: '.filter',
+                effects: ['fade'],
+                easing: 'snap'
+            });
+        }
+    };
+
+
+
+    $(function(){
 		contentWayPoint();
 		goToTop();
 		loaderPage();
@@ -143,6 +158,7 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+        filterList.init();
 	});
 
 
