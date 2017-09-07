@@ -1337,11 +1337,51 @@ input[type="text"] {
   overflow: hidden;
   position: relative !important;
   background: #666;
-  height: 270px;
 }
 
 .portfolio img
 {
   max-width: 100%;
   position: relative;
+}
+
+.portfolio .label
+{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: -30px;
+  display: block;
+}
+
+.portfolio .label-bg
+{
+  background: #34495E;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio .label-text
+{
+  color: #fff;
+  position: relative;
+  z-index: 500;
+  padding: 5px 8px;
+}
+
+.portfolio .label-text a.text-title
+{
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.portfolio .text-category
+{
+  display: block;
+  font-size: 10px;
 }
