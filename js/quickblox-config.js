@@ -1,4 +1,4 @@
-;(function(window) {
+;(function(window) { // 前面加分號以避免，写IIFE的时候，在执行体前不主动加分号而出現的錯誤
     'use strict';
 
     var CONFIG = {
@@ -17,10 +17,15 @@
             'authKey': 'AnB-JpA6r4y6RmS',
             'authSecret': '3O7Sr5Pg4Qjexwn'
         },
+        //'test': {
+        //    'appId': 39854,
+        //    'authKey': 'JtensAa9y4AM5Yk',
+        //    'authSecret': 'AsDFwwwxpr3LN5w'
+        //}
         'test': {
-            'appId': 39854,
-            'authKey': 'JtensAa9y4AM5Yk',
-            'authSecret': 'AsDFwwwxpr3LN5w'
+            'appId': 67300,
+            'authKey': 'hCkKsEWND6nv8vu',
+            'authSecret': 'E5dXqMg97xVzgc3'
         }
     };
 
