@@ -23,16 +23,16 @@ $(function() {
   var lastTypingTime;
   var $currentInput = $usernameInput.focus();
 
-  var socket = io();
-  // var socket = io.connect('http://localhost:3000', {reconnect: true});
+  //var socket = io();
+  var socket = io.connect('http://fe1d4e57.ngrok.io', {reconnect: true});
 
 
     function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "there's 1 participant";
+      message += "這裡有1人正在聊天室中";
     } else {
-      message += "there are " + data.numUsers + " participants";
+      message += "這裡有" + data.numUsers + "人在聊天室中";
     }
     log(message);
   }
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'is typing';
+    data.message = '正在輸入訊息...';
     addChatMessage(data);
   }
 
@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Socket.IO Chat – ";
+    var message = "歡迎來到直播聊天室 – ";
     log(message, {
       prepend: true
     });
