@@ -24,7 +24,7 @@ $(function() {
   var $currentInput = $usernameInput.focus();
 
   //var socket = io();
-  var socket = io.connect('http://fe1d4e57.ngrok.io', {reconnect: true});
+  var socket = io.connect('//fe1d4e57.ngrok.io', {reconnect: true});
 
 
     function addParticipantsMessage (data) {
