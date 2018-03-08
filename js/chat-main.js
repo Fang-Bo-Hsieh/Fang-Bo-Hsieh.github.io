@@ -21,7 +21,7 @@ $(function() {
   var connected = false;
   var typing = false;
   var lastTypingTime;
-  //var $currentInput = $usernameInput.focus();
+  var $currentInput = $usernameInput.focus();
 
   //var socket = io();
   var socket = io.connect('//e8b9b8f8.ngrok.io/', {reconnect: true});
