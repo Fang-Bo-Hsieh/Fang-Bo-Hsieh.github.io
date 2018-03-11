@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Youtube demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="slide demo" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Edward" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link rel="stylesheet" href="css/demo.css?v=7.0.1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css?v=7.0.1" />
+    <link rel="stylesheet" href="css/jquery.mhead.css?v=7.0.1" />
+
+    <style>
+        .Hidden
+        {
+            display: none !important;
+        }
+        li.searchresult
+        {
+            display: none;
+        }
+        #locations li span,
+        #radius li span
+        {
+            cursor: pointer;
+        }
+        .mm-title
+        {
+            color: #333 !important;
+        }
+        .mm-counter
+        {
+            color: #FF6A6C !important;
+        }
+        .mm-counter
+        {
+            z-index: -1;
+        }
+        .mm-navbar-bottom
+        {
+            border-top: none !important;
+            padding: 0 !important;
+        }
+        .mm-navbar-bottom .button
+        {
+            border-radius: 0;
+        }
+        .mm-check:before,
+        .mm-btn_prev:before
+        {
+            border-color: #FF6A6C !important;
+        }
+    </style>
+</head>
+<body>
+<div id="page">
+
+
+</div>
+
+<nav id="menu">
+    <div id="app">
+        <br />
+        <p><strong>This is a demo app.</strong><br />
+        <ul>
+            <li>
+                <span>診所簡介</span>
+
+                <!-- subpanel -->
+                <div id="intro">
+                    <p>
+                    保證無痛取卵
+                    送子麒麟由首位試管嬰兒著床前基因診斷權威醫師所帶領的專業醫師團隊加上頂級醫療檢測設備，讓您在捐卵過程中達到百分百「無痛」取卵。
+                    </p>
+                    <br />
+
+                </div>
+            </li>
+            <li>
+                <span>診所服務內容</span>
+
+                <!-- subpanel -->
+                <div id="service">
+                    <ul>
+                        <li class="Divider">&nbsp;</li>
+                        <li id="service-location">
+                            <em class="Counter">New York</em>
+                            <span>Location</span>
+
+                            <!-- subpanel -->
+                            <div id="locations">
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <br />
+                    <a href="#/search" class="button">Search</a>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.mmenu.all.js?v=7.0.1"></script>
+<script src="js/jquery.mhead.js?v=7.0.1"></script>
+<script>
+    $(function() {
+
+        $("#menu").mmenu({
+            offCanvas	: false,
+            extensions	: [ "theme-white" ],
+            navbar		: {
+                title	: "Demo"
+            },
+            navbars		: true,
+            onClick		: {
+                setSelected	: false
+            }}, { });
+        $(".mh-head.mm-sticky").mhead({
+            scroll: {
+                hide: 200
+            }
+        });
+        $(".mh-head:not(.mm-sticky)").mhead({
+            scroll: false
+        });
+
+
+        var $settings = $("#settings");
+
+        var api = $("#menu").data( "mmenu" );
+
+    });
+</script>
+</body>
+</html>
+
