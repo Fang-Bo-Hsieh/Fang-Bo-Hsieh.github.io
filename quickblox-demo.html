@@ -30,24 +30,24 @@
             <!-- JOIN -->
             <form class="join j-join">
                 <h3 class="join__title">
-                    <p>Please enter your username and chat room name.</p>
-                    <p>You can join existent chat room.</p>
-                    <p class="join__notice">
-                        Use several browsers to simulate several users.
-                    </p>
+                    <p>請輸入用戶名稱</p>
+                    <!--<p>You can join existent chat room.</p>-->
+                    <!--<p class="join__notice">-->
+                        <!--Use several browsers to simulate several users.-->
+                    <!--</p>-->
                 </h3>
 
                 <div class="join__body">
                     <div class="join__row">
-                        <input type="text" class="join__input" name="username" placeholder="Username" autofocus required title="Field should contain alphanumeric characters only in a range 3 to 20. The first character must be a letter." pattern="^[a-zA-Z][\w]{2,19}$">
+                        <input type="text" class="join__input" name="username" placeholder="用戶暱稱" autofocus required title="Field should contain alphanumeric characters only in a range 3 to 20. The first character must be a letter." >
                     </div>
 
                     <div class="join__row">
-                        <input type="text" class="join__input" name="room" placeholder="Chat room name" required title="Field should contain alphanumeric characters only in a range 3 to 15, without space. The first character must be a letter." pattern="^[a-zA-Z][a-zA-Z0-9]{2,14}$">
+                        <input type="hidden" class="join__input" value="IANROOM" name="room" placeholder="房間名稱" required title="Field should contain alphanumeric characters only in a range 3 to 15, without space. The first character must be a letter." pattern="^[a-zA-Z][a-zA-Z0-9]{2,14}$">
                     </div>
 
                     <div class="join__row">
-                        <button type="submit" class="join__btn">Login</button>
+                        <button type="submit" class="join__btn">登入</button>
                     </div>
                 </div>
             </form>
@@ -150,19 +150,19 @@
 <!-- TEMPLATES -->
 <!-- stateBoard -->
 <script type="text/template" id="tpl_default">
-    Room is <b><%= tag %></b>.
-    Logged in as <b><%= name %></b>
-    <button class='fw-link j-logout'>Logout</button>
+    房間名稱: <b><%= tag %></b>.
+    登入名稱: <b><%= name %></b>
+    <button class='fw-link j-logout'>登出</button>
 </script>
 
 <script type="text/template" id="tpl_during_call">
-    Login in as <b><%= name %></b>
+    登入名稱: <b><%= name %></b>
 </script>
 
 <script type="text/template" id="tpl_device_not_found">
-    Error: devices (camera or microphone) are not found.
-    <span class="qb-text">Login in <b>as <%=name%></b></span>
-    <button class='fw-link j-logout'>Logout</button>
+    錯誤: 設備 (攝影機或麥克風) 找不到.
+    <span class="qb-text">登入名稱: <b> <%=name%></b></span>
+    <button class='fw-link j-logout'>登出</button>
 </script>
 
 <script type="text/template" id="tpl_call_status">
@@ -196,9 +196,9 @@
 </script>
 
 <script type="text/template" id="tpl_call_stop">
-    Call is stopped.&emsp;
+    電話中斷 &emsp;
     Login&nbsp;in&nbsp;as&nbsp;<%=name%>
-    <button class='fw-link j-logout'>Logout</button>
+    <button class='fw-link j-logout'>登出</button>
 </script>
 
 <script type="text/template" id="p2p_call_stop">
@@ -306,7 +306,7 @@
 
 <script type="text/template" id="users_tpl">
     <div class="users__title" title="Choose a user to call">
-        Choose a user to call
+        選擇撥打用戶
         <button class="users__refresh j-users__refresh" title="click to refresh">
             <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

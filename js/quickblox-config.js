@@ -1,4 +1,4 @@
-;(function(window) { // 前面加分號以避免，写IIFE的时候，在执行体前不主动加分号而出現的錯誤
+;(function(window) { // 前面加分號以避免，寫IIFE的時候，在執行體前不主動加分號而出現的錯誤
     'use strict';
 
     var CONFIG = {
@@ -13,9 +13,9 @@
 
     var CREDENTIALS = {
         'prod': {
-            'appId': 40718,
-            'authKey': 'AnB-JpA6r4y6RmS',
-            'authSecret': '3O7Sr5Pg4Qjexwn'
+            'appId': 67300,
+            'authKey': 'hCkKsEWND6nv8vu',
+            'authSecret': 'E5dXqMg97xVzgc3'
         },
         //'test': {
         //    'appId': 39854,
@@ -31,15 +31,15 @@
 
     var MESSAGES = {
         'login': 'Login as any user on this computer and another user on another computer.',
-        'create_session': 'Creating a session...',
-        'connect': 'Connecting...',
+        'create_session': '創建會話中...',
+        'connect': '連接中...',
         'connect_error': 'Something went wrong with the connection. Check internet connection or user info and try again.',
-        'login_as': 'Logged in as ',
-        'title_login': 'Choose a user to login with:',
-        'title_callee': 'Choose users to call:',
-        'calling': 'Calling...',
-        'webrtc_not_avaible': 'WebRTC is not available in your browser',
-        'no_internet': 'Please check your Internet connection and try again'
+        'login_as': '登入為 ',
+        'title_login': '選擇用戶來登入:',
+        'title_callee': '選擇用戶去撥打:',
+        'calling': '撥打中...',
+        'webrtc_not_avaible': '您的瀏覽器不支援WebRTC',
+        'no_internet': '請確認您的網路連線是否正常'
     };
 
     window.CONFIG = {
