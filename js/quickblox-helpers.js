@@ -209,7 +209,11 @@
                 usersHTML = '',
                 users = [];
 
-            QB.users.get({'tags': [app.caller.user_tags], 'per_page': 100}, function(err, result){
+
+            // var params = {tags: ["APPUSER"]};
+
+            QB.users.get({'tags': ["APPUSER"], 'per_page': 100}, function(err, result){
+                console.log('get user by tag');
                 if (err) {
                     reject(err);
                 } else {
@@ -221,17 +225,22 @@
                         }
                     });
 
-                    if(result.items.length < 2) {
-                        reject({
-                            'title': 'not found',
-                            'message': 'Not found users by tag'
-                        });
-                    } else {
-                        resolve({
-                            'usersHTML': usersHTML,
-                            'users': users
-                        });
-                    }
+                    // if(result.items.length < 2) {
+                    //     reject({
+                    //         'title': 'not found',
+                    //         'message': 'Not found users by tag'
+                    //     });
+                    // } else {
+                    //     resolve({
+                    //         'usersHTML': usersHTML,
+                    //         'users': users
+                    //     });
+                    // }
+
+                    resolve({
+                        'usersHTML': usersHTML,
+                        'users': users
+                    });
                 }
             });
         });

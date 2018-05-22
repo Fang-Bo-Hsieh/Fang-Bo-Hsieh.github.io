@@ -23,9 +23,9 @@
         //    'authSecret': 'AsDFwwwxpr3LN5w'
         //}
         'test': {
-            'appId': 67300,
-            'authKey': 'hCkKsEWND6nv8vu',
-            'authSecret': 'E5dXqMg97xVzgc3'
+            'appId': 71196,
+            'authKey': 'OnHJpa4CC57t3GR',
+            'authSecret': 'sEjebG3v2L-TJBk'
         }
     };
 
