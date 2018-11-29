@@ -214,14 +214,21 @@
 
             QB.users.get({'tags': ["APPUSER"], 'per_page': 100}, function(err, result){
                 console.log('get user by tag');
+                var time = new Date();
+                console.log(time);
+                time.setMinutes(time.getMinutes() - 30);
+                console.log(time);
                 if (err) {
                     reject(err);
                 } else {
                     _.each(result.items, function(item) {
-                        users.push(item.user);
-
-                        if( item.user.id !== app.caller.id ) {
-                            usersHTML += tpl(item.user);
+                        //console.log(item);
+                        if (new Date(item.user.last_request_at) >= time) {
+                            console.log('last request time < 30');
+                            users.push(item.user);
+                            if( item.user.id !== app.caller.id ) {
+                                usersHTML += tpl(item.user);
+                            }
                         }
                     });
 
